@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="testbox">
+      <form action="/">
+        <div class="banner">
+          <h1>Sonos Mentor/Mentee Application Form</h1>
+        </div>
+        <h2>Applicant Details</h2>
+        <div class="item">
+          <p>Name</p>
+          <div class="name-item">
+            <input type="text" name="name" placeholder="First"/>
+            <input type="text" name="name" placeholder="Last"/>
+          </div>
+        </div>
+        <div class="item">
+          <p>Sonos Email</p>
+          <input type="text" name="name"/>
+        </div>
+	<h2>Details</h2>
+        <div class="item">
+          <select>
+            <option value="">Location</option>
+            <option value="1">Boston</option>
+            <option value="2">Santa Barbara</option>
+            <option value="3">Seattle</option>
+            <option value="4">Hilversum</option>
+            <option value="5">China</option>
+	    <option value="6">Paris</option>
+          </select>
+          </div>
+        <div class="item">
+          <p>Time Zone</p>
+          <input type="text" name="name"/>
+        </div>
+        <div class="item">
+          <p>Years of work experience</p>
+          <input type="text" name="name"/>
+        </div>
+        <div class="item">
+          <p>Department</p>
+          <input type="text" name="name"/>
+        </div>
+        <h2></h2>
+        <div class="item">
+          <p>Are you a people manager?</p>
+	  <input type="radio" name="manager_yes" value="yes">Yes
+	  <input type="radio" name="manager_no" value="no">No<br>
+        </div>
+        <div class="item">
+          <p>Languages you are comfortable having discussions in</p>
+	  <select multiple>
+		  <option value="english">English</option>
+		  <option value="mandarin">Mandarin</option>
+		  <option value="french">French</option>
+	  </select>
+        </div>
+        <div class="item">
+          <p>Competencies you could advise in</p>
+            <select multiple>
+              <option value="communication">Communication</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="leadership">Leadership</option>
+            </select>
+          </div>
+        <div class="item">
+          <p>Tell future mentors/mentees about yourself!</p>
+	  <textarea rows="10" cols="200">
+	  </textarea>
+        </div>
+        <div class="btn-block">
+          <button type="submit" href="/">Send</button>
+        </div>
+      </form>
+    </div>
+  {% endblock %}
